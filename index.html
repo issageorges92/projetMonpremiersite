@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="="utf-8">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div id="container-logo">    
+        <h2 class="logo">VANGAH DIGITAL</h2>
+        <p id="bienvenue"></p>
+        </div>
+        <nav class="menu">
+            <a href="index.html">Accueil</a>
+            <a href="#">Dactylo</a>
+            <a href="#">A propos</a>
+            <button id="seConnecter">Se Connecter</button> 
+            <button id="Deconnexion">Deconnexion</button> 
+        </nav>
+    </header>
+    <div class="wrapper">
+        <span class="icon-fermer">
+            <ion-icon name="close"></ion-icon>
+        </span>
+        <div class="formulaire connexion"> 
+            <h2>Se connecter</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="mail"></ion-icon>
+                    </span>      
+                    <input id="emailConnexion" type="email" required>
+                    <label>EMAIL</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="lock-closed"></ion-icon>
+                    </span>      
+                    <input id="mdpConnexion" type="password" required>
+                    <label>Mot de passe</label>
+                </div>
+                <div class="sesouvenirdemoi">
+                    <input type="checkbox">
+                    <label>Se souvenir de moi</label>  
+                </div>
+        
+                <button id="btnSeConnecter" type="submit" class="btn">se connecter</button>
+                <div class="mdpoublie">
+                    <a href="#">Mot de passe oublié?</a>
+                </div>
+                <div class="seconnecter-creeruncompte">
+                    <p>Vous n'avez pas de compte?<a href="#" class="lien-creation-compte">Creer un compte</a></p>
+                </div>
+            </form>
+        </div>
+
+        <div class="formulaire creeruncompte"> 
+            <h2>creer un compte</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="person"></ion-icon>
+                    </span>      
+                    <input id="nouveaunomutilisateur" type="text" required>
+                    <label>nom d'utilisateur</label>
+                </div>    
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="mail"></ion-icon>
+                    </span>      
+                    <input id="nouveauemail" type="email" required>
+                    <label>EMAIL</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="lock-closed"></ion-icon>
+                    </span>
+                    <input id="nouveaumdp" type="password" required>
+                    <label>Mot de passe</label>
+                </div>
+                <div class="termes-conditions">
+                    <label><input type="checkbox">j'accepte les <a href="#" target="_blank"> termes et conditions</a></label>
+                </div>
+                <button id="btnInscrire" type="submit" class="btn">s'inscrire</button>
+                <div class="seconnecter-creeruncompte">
+                    <p>Vous avez deja un compte<a href="#" class="lien-connexion">connectez vous</a></p>
+                </div>
+            </form>
+        </div>
+
+     <script src="popup.js"></script> 
+    <script src="authentification.js"></script>
+    <script src="creationcompte.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomdoule src ="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
