@@ -2,9 +2,10 @@
 <html lang="en">
 
 <head>
-    <meta charset="="utf-8">
+    <meta charset="utf-8">
     <title>portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylecv.css">
 </head>
 <body>
 
@@ -14,9 +15,9 @@
         <p id="bienvenue"></p>
         </div>
         <nav class="menu">
-            <a href="index.html" class="active">Accueil</a>
+            <a href="index.html" >Accueil</a>
             <a href="#">Mes projets</a>
-            <a href="cv.html">A propos de Moi</a>
+            <a href="cv.html" class="active">A propos de Moi</a>
             <button id="seConnecter">Se Connecter</button> 
             <button id="Deconnexion">Deconnexion</button> 
         </nav>
@@ -90,8 +91,46 @@
                 </div>
             </form>
         </div>
+    </div>
 
-     <script src="popup.js"></script> 
+    <div class="cv">
+     <div class="entete-cv">
+        <img id="maphoto"  src="armure.jpeg" alt="ici la photo de deux chevalier" />
+        <div class="informations">
+            <h1 id="nom-prenom">john doe</h1>
+            <h2 id="poste">front-end developer</h2>
+            <p id="phrase">peace is about knowledge and education is about future.</p>
+            <a id="mail" href="mailto:georges.9@hotmail.fr">georges.9@hotmail.fr</a>
+        </div>
+        <div class="social-network">
+
+           <a href="https://www.facebook.com" target="_blank"> <ion-icon name="logo-facebook"></ion-icon></a>
+            <ion-icon name="logo-twitter"></ion-icon>
+            <ion-icon name="logo-linkedin"></ion-icon>
+        </div>
+        
+     </div> 
+     <div class="experiences">
+        <h1>Experiences professionnelles</h1>
+        <div class="contenu-annee">
+            <h2 id="annee1">2020-2022</h2>
+            <h2 id="label-annee1">chômage</h2>
+        </div>
+        <div class="contenu-annee">
+            <h2 id="annee1">2020-2022</h2>
+            <h2 id="label-annee1">chômage</h2>
+        </div>
+        <div class="contenu-annee">
+            <h2 id="annee1">2020-2022</h2>
+            <h2 id="label-annee1">chômage</h2>
+        </div>
+     </div>     
+     <div class="formations"></div>
+     <div class="langues"></div>
+    </div>
+
+
+    <script src="popup.js"></script> 
     <script src="authentification.js"></script>
     <script src="creationcompte.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>

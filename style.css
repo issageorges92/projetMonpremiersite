@@ -71,8 +71,15 @@ header{
 }
 
 .menu a:active,   .menu a:visited{
+    color:white;
     text-decoration: none;
 }
+
+.menu a.active{
+    color:#162938;
+    text-decoration: underline;
+}
+
 
 .menu #seConnecter, .menu #Deconnexion{
     width: 130px;
